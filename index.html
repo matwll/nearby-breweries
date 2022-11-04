@@ -14,17 +14,40 @@
 </head>
 
 <body>
-   <header>
-    <h1 class="">Local Breweries</h1>
-    <h3>Feeling thirsty, but tired of the same old bar in town?</h3>
-   </header>
-    <div class="searchBox">
+    <!-- Header/Navbar(?) -->
+    <header>
+        <h1>Local Breweries</h1>
+    </header>
+
+    <!-- Landing Page with initial confirm button and fun facts -->
+    <div class="landingPage">
         <div>
-            <input class="input-field search-field" type="search" placeholder="Search for your city name or zip code..." />
+            <h4>Do you like a cold glass of beer and are looking to try something new?</h4>
+            <h5>Click the button below to see how to find a local brewery near you!</h5>
+            <button id="yesBtn" class="button">Sure! I'd like to try something new.</button>
+        </div>
+
+        <div class="funFacts">
+            <h4>Want to learn more about where you're going and what you're drinking?</h4>
+            <h5>Learn more about beer and breweries below!</h5>
+        </div>
+    </div>
+
+
+    <!-- Search page for pulling up brewery -->
+    <div id="searchBox" class="">
+        <div>
+            <input class="input-field search-field" type="search"
+                placeholder="Search for your city name or zip code..." />
         </div>
         <div>
             <button id="searchBtn" class="button">Search</button>
         </div>
+    </div>
+
+    <!-- Results page with brewery info and giphy result -->
+    <div class="breweryList">
+
     </div>
 
     <script src="./assets/javascript/giphy.js"></script>
