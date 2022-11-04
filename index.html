@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css" integrity="sha512-COhcCg6IPtpBb4rDu3fJb+MOVP8vjJmoASF9jl8KoPQwQTlh3pKBE7FHPBPLnd3jV/ZJ77g+8haAFlNwtkOi1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css"
+        integrity="sha512-COhcCg6IPtpBb4rDu3fJb+MOVP8vjJmoASF9jl8KoPQwQTlh3pKBE7FHPBPLnd3jV/ZJ77g+8haAFlNwtkOi1Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Nearby Brewery Search</title>
 </head>
+
 <body>
-    <h1>Local Breweries</h1>
+   <header>
+    <h1 class="">Local Breweries</h1>
+    <h3>Feeling thirsty, but tired of the same old bar in town?</h3>
+   </header>
+    <div class="searchBox">
+        <div>
+            <input class="input-field search-field" type="search" placeholder="Search for your city name or zip code..." />
+        </div>
+        <div>
+            <button id="searchBtn" class="button">Search</button>
+        </div>
+    </div>
 
     <script src="./assets/javascript/giphy.js"></script>
     <script src="./assets/javascript/brewery.js"></script>
 </body>
+
 </html>
