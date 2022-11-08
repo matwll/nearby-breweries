@@ -111,6 +111,10 @@ header h1 {
   background-color: rgb(237, 211, 194);
 }
 
+.breweryList {
+  background-color: rgb(228, 223, 204);
+}
+
 .breweryList div {
   position: relative;
   display: flex;
