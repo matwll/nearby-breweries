@@ -4,6 +4,7 @@
 }
 img {
   width: 100%;
+  
 }
 #yesBtn {
   background-image: linear-gradient(to top, #3d0606 0%, #702f2f 51%, #a05353 100%);
@@ -21,7 +22,15 @@ header {
   align-items: flex-start;
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
-  padding: 15px;
+  padding: 10px;
+  padding-left: 30px;
+  position: sticky;
+  
+}
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  
+  font-size: 4rem;
 }
 
 #searchBox {
@@ -64,6 +73,9 @@ header {
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
   border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 50;
 }
 
 .landingIntro h5 {
