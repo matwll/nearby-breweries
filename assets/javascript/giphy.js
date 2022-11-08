@@ -24,6 +24,7 @@ function getApi() {
         //creates image element and assigns the random Gif as the source
         var randGif = document.createElement("img");
         randGif.src = jsonArray.data.images.fixed_height.url;
+        randGif.classList.add("gif")
         breweryListEl.appendChild(randGif);
       })
   };

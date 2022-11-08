@@ -25,9 +25,6 @@ function searchCity() {
         var city = data[i].city;
         var webAdress = data[i].website_url;
         
-        //variable to select all the gyphs and append 1 set of search info to each
-        var gyphs = document.querySelectorAll('.gif');
-        for (var i = 0; i < gyphs.length; i++){
         //create a card and append to dom
         var divEl = document.createElement("div");
         var typeEl = document.createElement("li");
@@ -49,6 +46,5 @@ function searchCity() {
         divEl.appendChild(webAdressEl);
         domHook2.appendChild(divEl);
       }
-    }
     });
 };
