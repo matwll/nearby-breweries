@@ -26,6 +26,7 @@ function getApi() {
         randGif.src = jsonArray.data.images.fixed_height.url;
         randGif.classList.add("gif")
         breweryListEl.appendChild(randGif);
+        console.log(randGif)
       })
   };
   inputFieldEl.value = inputFieldEl.value.replace("+", " ")

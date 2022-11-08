@@ -1,31 +1,81 @@
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(20, 25, 58);
-    color: rgb(217, 237, 255);
-    padding: 15px;
+* {
+  font-size: 20px;
+  line-height: 1.5rem;
 }
+img {
+  width: 100%;
+}
+#yesBtn {
+  background-image: linear-gradient(to top, #3d0606 0%, #702f2f 51%, #a05353 100%);
+  background-color: rgb(126, 53, 67);
+  border-radius: 4px;
+}
+#yesBtn:hover{
+background-color: rgb(131, 83, 91);
+box-shadow: 2.5px 2.5px rgb(125, 114, 114);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(65, 28, 33);
+  color: rgb(238, 238, 238);
+  padding: 15px;
+}
+
 #searchBox {
-    display: flex;
-    justify-content: center;
-    padding: 80px;
-  }
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
 
+.search-field {
+  width: 500px;
+  height: 40px;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #c9c9c9;
+  transition: all 0.5s ease;
+}
 
-  .search-field {
-    width: 500px;
-    height: 40px;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #c9c9c9;
-    transition: all 0.5s ease;
-  }
-  .hide {
-    display: none;
-  }
-  .show {
-    display: flex;
-  }
-  
+.hide {
+  display: none;
+}
 
+.show {
+  display: flex;
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(228, 223, 204);
+}
+
+.landingIntro {
+  padding: 100px 0px 100px 0px;
+}
+
+.landingIntro h4 {
+  padding: 25px;
+  background-color: rgb(65, 28, 33);
+  color: rgb(238, 238, 238);
+  border-radius: 8px;
+}
+
+.landingIntro h5 {
+  padding: 5px 0 35px 0;
+}
+
+.spacer {
+  margin: 0 80px 0 80px;
+  border-bottom: 1px solid;
+  border-color: black;
+}
+
+.factContainer {
+  background-color: rgb(237, 211, 194);
+}
