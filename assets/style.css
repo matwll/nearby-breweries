@@ -110,27 +110,42 @@ header h1 {
 }
 
 .spacer {
-  margin: 0 80px 0 80px;
-  border-bottom: 1px solid;
-  border-color: black;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 4px solid;
+  border-color: #553434;
+  margin-bottom: 20px;
 }
 
 .funFacts {
   width: 100%;
- 
   margin-bottom: 25px;
 }
 
 .factIntro {
-  width: 90%;
-  margin: 0 auto;
-  border-bottom: 2px solid;
-  border-color: #3d0606;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .funFacts h5 {
-
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: antiquewhite;
+font-family: 'Oswald', sans-serif;
+font-size: 1.5rem;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.funFacts h6 {
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: antiquewhite;
 }
 
 .factContainer {
