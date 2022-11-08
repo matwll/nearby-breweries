@@ -1,11 +1,10 @@
-var domHook = document.querySelector('#searchBtn');
-var domHook1 = document.querySelector(".input-field");
-var domHook2 = document.querySelectorAll(".breweryList");
+var searchBtn = document.querySelector('#searchBtn');
+var citySearch = document.querySelector(".input-field");
 var listChildren = document.querySelectorAll('.brewery');
 
-var searchInput = domHook1.value;
+var searchInput = citySearch.value;
 
-domHook.addEventListener('click', searchCity);
+searchBtn.addEventListener('click', searchCity);
 
 function searchCity() {
   fetch(
@@ -19,7 +18,7 @@ function searchCity() {
     .then(function (data) {
       console.log(data);
       var divList = [];
-
+      //for loop to interate over the data and seperate the information to be displayed in cards
       for (var i = 0; i < data.length; i++) {
         var type = data[i].brewery_type;
         var name = data[i].name;
@@ -41,6 +40,7 @@ function searchCity() {
         webAdressEl.textContent = webAdress;
         webAdressEl.setAttribute('href', webAdress)
 
+        //attach all of the li's to the div and push each of those div's into an array
         divEl.appendChild(typeEl);
         divEl.appendChild(nameEl);
         divEl.appendChild(adressEl);
@@ -48,6 +48,7 @@ function searchCity() {
         divEl.appendChild(webAdressEl);
         divList.push(divEl);
       };
+      //iterate over the array of breweries and append 1 to each div in the brewery list element
       for (var i = 0; i < divList.length; i++){
         listChildren[i].appendChild(divList[i]);
       }
