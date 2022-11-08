@@ -1,6 +1,7 @@
 var domHook = document.querySelector('#searchBtn');
 var domHook1 = document.querySelector(".input-field");
-var domHook2 = document.querySelector(".breweryList");
+var domHook2 = document.querySelectorAll(".breweryList");
+var listChildren = document.querySelectorAll('.brewery');
 
 var searchInput = domHook1.value;
 
@@ -17,6 +18,7 @@ function searchCity() {
     })
     .then(function (data) {
       console.log(data);
+      var divList = [];
 
       for (var i = 0; i < data.length; i++) {
         var type = data[i].brewery_type;
@@ -44,7 +46,10 @@ function searchCity() {
         divEl.appendChild(adressEl);
         divEl.appendChild(cityEl);
         divEl.appendChild(webAdressEl);
-        domHook2.appendChild(divEl);
+        divList.push(divEl);
+      };
+      for (var i = 0; i < divList.length; i++){
+        listChildren[i].appendChild(divList[i]);
       }
     });
 };
