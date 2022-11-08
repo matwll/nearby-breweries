@@ -1,6 +1,11 @@
 * {
   font-size: 20px;
   line-height: 1.5rem;
+  
+}
+
+body {
+  background-color: rgb(228, 223, 204);
 }
 img {
   width: 100%;
@@ -45,6 +50,7 @@ header h1 {
 }
 
 #searchBox h4 {
+  margin-top: 80px;
   padding: 25px;
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
@@ -74,7 +80,7 @@ header h1 {
 }
 
 .show {
-  display: flex;
+  display: block;
 }
 
 .landingPage {
@@ -111,13 +117,24 @@ header h1 {
 
 .funFacts {
   width: 100%;
-  border-bottom:1px solid;
+ 
+  margin-bottom: 25px;
+}
+
+.factIntro {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2px solid;
   border-color: #3d0606;
   margin-bottom: 25px;
 }
 
 .funFacts h5 {
-  
+
+}
+
+.factContainer {
+  background-color: rgb(228, 223, 204);
 }
 
 .factContainer {
@@ -126,7 +143,7 @@ header h1 {
 
 #factA {
   width: 50%;
-  
+  border-radius: 10px;
   margin-left: 20%;
   display: flex;
   flex-direction: column;
@@ -137,33 +154,7 @@ header h1 {
   border-color: #702f2f;
   box-shadow: 5px 5px 5px rgb(131, 83, 91);
 }
-#factA h2 {
-  color: antiquewhite;
-  padding: 10px;
-  font-family: 'Oswald', sans-serif;
-}
-#factA p {
-  background-color: antiquewhite;
-  margin: 0;
-  padding: 15px;
-}
-.factContainer {
-  background-color: rgb(228, 223, 204);
-}
 
-#factA {
-  width: 50%;
-  
-  margin-left: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #702f2f;
-  text-align: left;
-  border: 10px solid;
-  border-color: #702f2f;
-  box-shadow: 5px 5px 5px rgb(131, 83, 91);
-}
 #factA h2 {
   color: antiquewhite;
   padding: 10px;
@@ -177,6 +168,7 @@ header h1 {
 
 #factB {
   width: 50%;
+  border-radius: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 20%;
