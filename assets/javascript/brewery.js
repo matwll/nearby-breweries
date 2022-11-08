@@ -11,7 +11,6 @@ function searchCity() {
     "https://api.openbrewerydb.org/breweries?by_city=" +
       searchInput +
       "&per_page=5"
-    // "https://api.openbrewerydb.org/breweries?by_city=seattle&per_page=5"
   )
     .then(function (response) {
       return response.json();
@@ -25,7 +24,10 @@ function searchCity() {
         var adress = data[i].street;
         var city = data[i].city;
         var webAdress = data[i].website_url;
-
+        
+        //variable to select all the gyphs and append 1 set of search info to each
+        var gyphs = document.querySelectorAll('.gif');
+        for (var i = 0; i < gyphs.length; i++){
         //create a card and append to dom
         var divEl = document.createElement("div");
         var typeEl = document.createElement("li");
@@ -47,5 +49,6 @@ function searchCity() {
         divEl.appendChild(webAdressEl);
         domHook2.appendChild(divEl);
       }
+    }
     });
 };
