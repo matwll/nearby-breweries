@@ -147,6 +147,61 @@ header h1 {
   margin: 0;
   padding: 15px;
 }
+.factContainer {
+  background-color: rgb(228, 223, 204);
+}
+
+#factA {
+  width: 50%;
+  
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #702f2f;
+  text-align: left;
+  border: 10px solid;
+  border-color: #702f2f;
+  box-shadow: 5px 5px 5px rgb(131, 83, 91);
+}
+#factA h2 {
+  color: antiquewhite;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+#factA p {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 15px;
+}
+
+#factB {
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #702f2f;
+  text-align: left;
+  border: 10px solid;
+  border-color: #702f2f;
+  box-shadow: 5px 5px 5px rgb(131, 83, 91);
+  
+}
+
+#factB h2 {
+  color: antiquewhite;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+#factB p {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 15px;
+}
 
 .breweryList div {
   position: relative;
