@@ -1,31 +1,31 @@
-var domHook = document.querySelector('#searchBtn');
-var domHook1 = document.querySelector(".input-field");
-var domHook2 = document.querySelector(".breweryList");
+var searchBtn = document.querySelector('#searchBtn');
+var citySearch = document.querySelector(".input-field");
+var listChildren = document.querySelectorAll('.brewery');
 
-var searchInput = domHook1.value;
+var searchInput = citySearch.value;
 
-domHook.addEventListener('click', searchCity);
+searchBtn.addEventListener('click', searchCity);
 
 function searchCity() {
   fetch(
     "https://api.openbrewerydb.org/breweries?by_city=" +
       searchInput +
       "&per_page=5"
-    // "https://api.openbrewerydb.org/breweries?by_city=seattle&per_page=5"
   )
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       console.log(data);
-
+      var divList = [];
+      //for loop to interate over the data and seperate the information to be displayed in cards
       for (var i = 0; i < data.length; i++) {
         var type = data[i].brewery_type;
         var name = data[i].name;
         var adress = data[i].street;
         var city = data[i].city;
         var webAdress = data[i].website_url;
-
+        
         //create a card and append to dom
         var divEl = document.createElement("div");
         var typeEl = document.createElement("li");
@@ -40,12 +40,17 @@ function searchCity() {
         webAdressEl.textContent = webAdress;
         webAdressEl.setAttribute('href', webAdress)
 
+        //attach all of the li's to the div and push each of those div's into an array
         divEl.appendChild(typeEl);
         divEl.appendChild(nameEl);
         divEl.appendChild(adressEl);
         divEl.appendChild(cityEl);
         divEl.appendChild(webAdressEl);
-        domHook2.appendChild(divEl);
+        divList.push(divEl);
+      };
+      //iterate over the array of breweries and append 1 to each div in the brewery list element
+      for (var i = 0; i < divList.length; i++){
+        listChildren[i].appendChild(divList[i]);
       }
     });
 };
