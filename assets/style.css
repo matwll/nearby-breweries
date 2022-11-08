@@ -35,8 +35,27 @@ header h1 {
 
 #searchBox {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 80px;
+  background-color: rgb(228, 223, 204);
+}
+
+#searchBox h4 {
+  padding: 25px;
+  background-color: rgb(65, 28, 33);
+  color: rgb(238, 238, 238);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 50;
+}
+
+#searchBtn {
+  background-image: linear-gradient(to top, #3d0606 0%, #702f2f 51%, #a05353 100%);
+  background-color: rgb(126, 53, 67);
+  border-radius: 4px;
 }
 
 .search-field {
@@ -96,7 +115,8 @@ header h1 {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 244, 213);
+  background-color: rgb(65, 28, 33);
+  color: rgb(238, 238, 238);
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem;
   width: 75%;
