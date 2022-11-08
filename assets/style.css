@@ -30,19 +30,37 @@ header {
   position: fixed;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
   padding: 10px;
-  padding-left: 30px;
- 
-  
+  padding-left: 30px;  
 }
+
 header h1 {
   font-family: 'Oswald', sans-serif;
   
   font-size: 4rem;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 45px;
+  font-size: 1.5rem;
+}
+header a {
+    font-size: 1.5rem;
+    color: rgb(238, 238, 238);
+    margin: 15px;
+}
+header a:hover {
+  color: #916262;
+  text-shadow: 2px #ffffff;
+  border-bottom: 2px solid #916262;
 }
 
 #searchBox {
@@ -115,27 +133,42 @@ header h1 {
 }
 
 .spacer {
-  margin: 0 80px 0 80px;
-  border-bottom: 1px solid;
-  border-color: black;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 4px solid;
+  border-color: #553434;
+  margin-bottom: 20px;
 }
 
 .funFacts {
   width: 100%;
- 
   margin-bottom: 25px;
 }
 
 .factIntro {
-  width: 90%;
-  margin: 0 auto;
-  border-bottom: 2px solid;
-  border-color: #3d0606;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .funFacts h5 {
-
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: rgb(238, 238, 238);
+font-family: 'Oswald', sans-serif;
+font-size: 1.5rem;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.funFacts h6 {
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: rgb(238, 238, 238);
 }
 
 .factContainer {
@@ -168,7 +201,7 @@ header h1 {
 #factA p {
   background-color: antiquewhite;
   margin: 0;
-  padding: 15px;
+  padding: 25px;
 }
 
 #factB {
@@ -197,7 +230,7 @@ header h1 {
 #factB p {
   background-color: antiquewhite;
   margin: 0;
-  padding: 15px;
+  padding: 25px;
 }
 
 .breweryList {
