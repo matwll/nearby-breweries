@@ -1,17 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css" integrity="sha512-COhcCg6IPtpBb4rDu3fJb+MOVP8vjJmoASF9jl8KoPQwQTlh3pKBE7FHPBPLnd3jV/ZJ77g+8haAFlNwtkOi1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css"
+      integrity="sha512-COhcCg6IPtpBb4rDu3fJb+MOVP8vjJmoASF9jl8KoPQwQTlh3pKBE7FHPBPLnd3jV/ZJ77g+8haAFlNwtkOi1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Nearby Brewery Search</title>
-</head>
-<body>
-    <h1>Local Breweries</h1>
+  </head>
 
+  <body>
+    <!-- Header/Navbar(?) -->
+    <header>
+      <h1>Local Breweries</h1>
+    </header>
+    <div class="coverImage">
+      <img src="./assets/images/beer-cover2.png" />
+    </div>
+    <!-- Landing Page with initial confirm button and fun facts -->
+    <div class="landingPage">
+      <div class="landingIntro">
+        <h4>
+          Do you like a cold glass of beer and are looking to try something new?
+        </h4>
+        <h5>
+          Click the button below to see how to find a local brewery near you!
+        </h5>
+        <button id="yesBtn" class="button">
+          Sure! I'd like to try something new.
+        </button>
+      </div>
+
+        <div class="funFacts">
+            <h4>Want to learn more about where you're going and what you're drinking?</h4>
+            <h5>Learn more about beer and breweries below!</h5>
+            <section id="fun-facts">
+                <div class="style-beer">
+                    <!-- stating facts about beer-->
+                <h2>Styles of Beer 🍻</h2>
+            
+                   <p> There are hundreds of different of style of beers. Although there are two major categories of beer (ales and lagers), beer has hundreds of varieties. Here are the top 5 most popular 1. American Lager 2. International Lager 3. American Pale Ale 4. India Pale Ale (IPA) 5. Stout 
+                   </p>
+            
+                </div>
+            </section>
+            
+            <div class="benefit-beer">
+                <h2>Benefits of Beer</h2>
+                <p>
+                    It may lower your risk of diabetes.
+                    It may build stronger bones.
+                    It cleans your teeth.
+                    It may reduce your chance of a stroke.
+                    It may help you live longer.
+                </p>
+            </div>
+            
+            <div class="beer-day">
+                <h2>Beer day in America</h2>
+                <p>
+                    National Beer Day is celebrated yearly in the United States on the 7th of April. The economy benefits from beer sales.
+                </p>
+            </div>
+            
+            <div class="drink">
+                <h2>Consumed drink</h2>
+                <p>
+                   - Beer is the third most-consumed drink in the world, after water and tea. 
+                    - When it comes to total beer consumption, China ranks number one.
+            
+                </p>
+            </div>
+            
+                <div class="brewing">
+                    <h2>What is brewing?</h2>
+                    <p>
+                        Brewing is the production of beer by steeping a starch source in water and fermenting the resulting sweet liquid with yeast. It may be done in a brewery by a commercial brewer, at home by a homebrewer, or communally.
+                    </p>
+            </div>
+            
+            <div class="producing-beer">
+                <h2>Beer Producing</h2>
+                <p>
+                    - China, the United States, Germany, Russia and Brazil are among the top five beer-producing countries.
+                    - More than 7,000 breweries manufacture beers in the United States.
+                    - California is the biggest producer of beer in the U.S. with over 1,100 breweries
+                </p>
+            
+            </div>
+            </div>
+                
+        </div>
+    </div>
+    <div class="factContainer"></div>
+
+    <!-- Search page for pulling up brewery -->
+    <div id="searchBox" class="">
+      <div>
+        <input
+          class="input-field search-field"
+          type="search"
+          placeholder="Search for your city name..."
+        />
+      </div>
+      <div>
+        <button id="searchBtn" class="button">Search</button>
+      </div>
+    </div>
+
+    <!-- Results page with brewery info and giphy result -->
+    <div class="breweryList">
+      <div class="brewery"></div>
+      <div class="brewery"></div>
+      <div class="brewery"></div>
+      <div class="brewery"></div>
+      <div class="brewery"></div>
+    </div>
     <script src="./assets/javascript/giphy.js"></script>
     <script src="./assets/javascript/brewery.js"></script>
-</body>
+  </body>
 </html>
