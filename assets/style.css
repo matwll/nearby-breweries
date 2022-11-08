@@ -25,19 +25,37 @@ header {
   position: fixed;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
   padding: 10px;
-  padding-left: 30px;
- 
-  
+  padding-left: 30px;  
 }
+
 header h1 {
   font-family: 'Oswald', sans-serif;
   
   font-size: 4rem;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 45px;
+  font-size: 1.5rem;
+}
+header a {
+    font-size: 1.5rem;
+    color: rgb(238, 238, 238);
+    margin: 15px;
+}
+header a:hover {
+  color: #916262;
+  text-shadow: 2px #ffffff;
+  border-bottom: 2px solid #916262;
 }
 
 #searchBox {
@@ -132,7 +150,7 @@ margin: 0;
 margin-left: 5%;
 padding: 15px;
 background-color: #553434;
-color: antiquewhite;
+color: rgb(238, 238, 238);
 font-family: 'Oswald', sans-serif;
 font-size: 1.5rem;
 border-top-left-radius: 10px;
@@ -145,7 +163,7 @@ margin: 0;
 margin-left: 5%;
 padding: 15px;
 background-color: #553434;
-color: antiquewhite;
+color: rgb(238, 238, 238);
 }
 
 .factContainer {
@@ -178,7 +196,7 @@ color: antiquewhite;
 #factA p {
   background-color: antiquewhite;
   margin: 0;
-  padding: 15px;
+  padding: 25px;
 }
 
 #factB {
@@ -207,7 +225,7 @@ color: antiquewhite;
 #factB p {
   background-color: antiquewhite;
   margin: 0;
-  padding: 15px;
+  padding: 25px;
 }
 
 .breweryList div {
