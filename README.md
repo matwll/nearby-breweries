@@ -98,7 +98,6 @@ See `LICENSE` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 * [Beer Fun Facts Source](https://facts.net/beer-facts/#:~:text=01Beer's%20core%20ingredients%20are,47%20million%20kiloliters%20per%20year)
 * [Cover Image for landing](https://timelinecovers.pro/covers/food-and-drinks/beer_facebook-cover-photo)
 * [API for Brewery list](https://www.openbrewerydb.org/documentation)
