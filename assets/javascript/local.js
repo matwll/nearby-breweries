@@ -1,25 +1,30 @@
-var citySearch = document.querySelector(".input-field");
-
 // having a local storage to save previous city names
-
-localStorage.setItem("searchCity", (".input-field"));
+localStorage.setItem("searchCity", ".input-field");
 
 var myValue = localStorage.getItem("searchCity");
-
+// get value from input (add event listener)
 console.log(myValue)
+var inputValue="" //put the value from the input to this variable
 
-var arrayData = [
+var searchHistory = [
     {
-        "searchCity": ".input-field"
+        "searchCity": "Seattle", 
+         "postalCode": ""
     },
     {
-        "khttps://api.openbrewerydb.org/breweries?by_city=": "value02"
+        "searchCity": "San Francisco",
+        "postalCode": ""
+    },
+    {
+        "searchCity": "Los Angeles",
+        "postalCode": ""
     }
 ]
+// push inputValue into search history
 
-localStorage.setItem("myArray", JSON.stringify(arrayData));
+localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 
-var myObj = localStorage.getItem("searchCity");
+var myObj = localStorage.getItem("searchHistory");
 
 console.log(myObj);
 var parsedData = JSON.parse(myObj);
