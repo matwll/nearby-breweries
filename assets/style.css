@@ -1,11 +1,21 @@
 * {
   font-size: 20px;
   line-height: 1.5rem;
+  
+}
+
+body {
+  background-color: rgb(228, 223, 204);
 }
 img {
   width: 100%;
-  
+  box-shadow: 8px 8px 5px rgb(196, 188, 133);
 }
+
+body {
+  background-color: rgb(228, 223, 204);
+}
+
 #yesBtn {
   background-image: linear-gradient(to top, #3d0606 0%, #702f2f 51%, #a05353 100%);
   background-color: rgb(126, 53, 67);
@@ -17,26 +27,66 @@ box-shadow: 2.5px 2.5px rgb(125, 114, 114);
 }
 
 header {
+  position: fixed;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
   padding: 10px;
-  padding-left: 30px;
-  position: sticky;
-  
+  padding-left: 30px;  
 }
+
 header h1 {
   font-family: 'Oswald', sans-serif;
   
   font-size: 4rem;
 }
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 45px;
+  font-size: 1.5rem;
+}
+header a {
+    font-size: 1.5rem;
+    color: rgb(238, 238, 238);
+    margin: 15px;
+}
+header a:hover {
+  color: #916262;
+  text-shadow: 2px #ffffff;
+  border-bottom: 2px solid #916262;
+}
 
 #searchBox {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 80px;
+  background-color: rgb(228, 223, 204);
+}
+
+#searchBox h4 {
+  margin-top: 80px;
+  padding: 25px;
+  background-color: rgb(65, 28, 33);
+  color: rgb(238, 238, 238);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 50;
+}
+
+#searchBtn {
+  background-image: linear-gradient(to top, #3d0606 0%, #702f2f 51%, #a05353 100%);
+  background-color: rgb(126, 53, 67);
+  border-radius: 4px;
 }
 
 .search-field {
@@ -53,7 +103,7 @@ header h1 {
 }
 
 .show {
-  display: flex;
+  display: block;
 }
 
 .landingPage {
@@ -83,22 +133,118 @@ header h1 {
 }
 
 .spacer {
-  margin: 0 80px 0 80px;
-  border-bottom: 1px solid;
-  border-color: black;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 4px solid;
+  border-color: #553434;
+  margin-bottom: 20px;
+}
+
+.funFacts {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.factIntro {
+  /* margin-bottom: 25px; */
+}
+
+.funFacts h5 {
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: rgb(238, 238, 238);
+font-family: 'Oswald', sans-serif;
+font-size: 1.5rem;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.funFacts h6 {
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: rgb(238, 238, 238);
 }
 
 .factContainer {
-  background-color: rgb(237, 211, 194);
+  background-color: rgb(228, 223, 204);
 }
 
-.breweryList div {
+.factContainer {
+  background-color: rgb(228, 223, 204);
+}
+
+#factA {
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #702f2f;
+  text-align: left;
+  border: 10px solid;
+  border-color: #702f2f;
+  box-shadow: 5px 5px 5px rgb(131, 83, 91);
+}
+
+#factA h2 {
+  color: antiquewhite;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+#factA p {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 25px;
+}
+
+#factB {
+  width: 50%;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #702f2f;
+  text-align: left;
+  border: 10px solid;
+  border-color: #702f2f;
+  box-shadow: 5px 5px 5px rgb(131, 83, 91);
+  
+}
+
+#factB h2 {
+  color: antiquewhite;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+#factB p {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 25px;
+}
+
+.breweryList {
+  background-color: rgb(228, 223, 204);
+}
+
+.brewery {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 244, 213);
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 0.25rem;
+  background-color: rgb(65, 28, 33);
+  color: rgb(238, 238, 238);
+  border: 1px solid rgb(53, 23, 27);
+  border-radius: .25rem;
   width: 75%;
   margin: 15px auto;
   padding-right: 15px;
