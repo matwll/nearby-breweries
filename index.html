@@ -20,12 +20,16 @@
     <!-- Header/Navbar(?) -->
     <header>
         <h1>Local Breweries</h1>
+        <nav><ul>
+            <li><a href="#funFacts">Beer Facts</a></li>
+        <li><a href="#landing">Brewery Search</a></li>
+        </ul></nav>
     </header>
-    <div class="coverImage">
+    <div id="coverImage" class="">
         <img src="./assets/images/beer-cover2.png" />
     </div>
     <!-- Landing Page with initial confirm button and fun facts -->
-    <div class="landingPage">
+    <div id="landing" class="landingPage">
         <div class="landingIntro">
             <h4>
                 Do you like a cold glass of beer and are looking to try something new?
@@ -39,12 +43,14 @@
         </div>
 
         <div class="funFacts">
+           <div class="factIntro">
             <h5>
                 Want to learn more about where you're going and what you're drinking?
             </h5>
             <h6>Learn more about beer and breweries below!</h6>
-
-            <div class="factContainer">
+        </div>
+        <div class="spacer"></div>
+            <div id="funFacts" class="factContainer">
 
                 
                     <div id="factA" class="style-beer">
@@ -53,8 +59,8 @@
 
                         <p> There are hundreds of different styles of beers. Although there are two major categories
                             of
-                            beer (ales and lagers), beer has hundreds of varieties.<br>Here are the top 5 most popular 1.
-                            American Lager 2. International Lager 3. American Pale Ale 4. India Pale Ale (IPA) 5. Stout
+                            beer (ales and lagers), beer has hundreds of varieties.<br>Here are the top 5 most popular:<br>1.
+                            American Lager <br>2. International Lager <br>3. American Pale Ale <br>4. India Pale Ale (IPA) <br>5. Stout
                         </p>
 
                     </div>
@@ -74,7 +80,7 @@
                 <div id="factA" class="beer-day">
                     <h2>Beer day in America</h2>
                     <p>
-                        National Beer Day is celebrated yearly in the United States on the<strong>7th of April.</strong>  The economy
+                        National Beer Day is celebrated yearly in the United States on the<strong> 7th of April.</strong>  The economy
                         benefits from beer sales.
                     </p>
                 </div>
@@ -143,6 +149,7 @@
     </div>
     <script src="./assets/javascript/giphy.js"></script>
     <script src="./assets/javascript/brewery.js"></script>
+    <script src="./assets/javascript/basic.js"></script>
 </body>
 
 </html>

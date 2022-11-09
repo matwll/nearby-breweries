@@ -1,6 +1,11 @@
 * {
   font-size: 20px;
   line-height: 1.5rem;
+  
+}
+
+body {
+  background-color: rgb(228, 223, 204);
 }
 img {
   width: 100%;
@@ -25,19 +30,37 @@ header {
   position: fixed;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
   padding: 10px;
-  padding-left: 30px;
- 
-  
+  padding-left: 30px;  
 }
+
 header h1 {
   font-family: 'Oswald', sans-serif;
   
   font-size: 4rem;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 45px;
+  font-size: 1.5rem;
+}
+header a {
+    font-size: 1.5rem;
+    color: rgb(238, 238, 238);
+    margin: 15px;
+}
+header a:hover {
+  color: #916262;
+  text-shadow: 2px #ffffff;
+  border-bottom: 2px solid #916262;
 }
 
 #searchBox {
@@ -50,6 +73,7 @@ header h1 {
 }
 
 #searchBox h4 {
+  margin-top: 80px;
   padding: 25px;
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
@@ -79,7 +103,7 @@ header h1 {
 }
 
 .show {
-  display: flex;
+  display: block;
 }
 
 .landingPage {
@@ -109,20 +133,46 @@ header h1 {
 }
 
 .spacer {
-  margin: 0 80px 0 80px;
-  border-bottom: 1px solid;
-  border-color: black;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 4px solid;
+  border-color: #553434;
+  margin-bottom: 20px;
 }
 
 .funFacts {
   width: 100%;
-  border-bottom:1px solid;
-  border-color: #3d0606;
   margin-bottom: 25px;
 }
 
+.factIntro {
+  /* margin-bottom: 25px; */
+}
+
 .funFacts h5 {
-  
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: rgb(238, 238, 238);
+font-family: 'Oswald', sans-serif;
+font-size: 1.5rem;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.funFacts h6 {
+width: fit-content;
+margin: 0;
+margin-left: 5%;
+padding: 15px;
+background-color: #553434;
+color: rgb(238, 238, 238);
+}
+
+.factContainer {
+  background-color: rgb(228, 223, 204);
 }
 
 .factContainer {
@@ -131,7 +181,7 @@ header h1 {
 
 #factA {
   width: 50%;
-  
+  border-radius: 10px;
   margin-left: 20%;
   display: flex;
   flex-direction: column;
@@ -142,33 +192,7 @@ header h1 {
   border-color: #702f2f;
   box-shadow: 5px 5px 5px rgb(131, 83, 91);
 }
-#factA h2 {
-  color: antiquewhite;
-  padding: 10px;
-  font-family: 'Oswald', sans-serif;
-}
-#factA p {
-  background-color: antiquewhite;
-  margin: 0;
-  padding: 15px;
-}
-.factContainer {
-  background-color: rgb(228, 223, 204);
-}
 
-#factA {
-  width: 50%;
-  
-  margin-left: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #702f2f;
-  text-align: left;
-  border: 10px solid;
-  border-color: #702f2f;
-  box-shadow: 5px 5px 5px rgb(131, 83, 91);
-}
 #factA h2 {
   color: antiquewhite;
   padding: 10px;
@@ -177,11 +201,12 @@ header h1 {
 #factA p {
   background-color: antiquewhite;
   margin: 0;
-  padding: 15px;
+  padding: 25px;
 }
 
 #factB {
   width: 50%;
+  border-radius: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 20%;
@@ -205,7 +230,7 @@ header h1 {
 #factB p {
   background-color: antiquewhite;
   margin: 0;
-  padding: 15px;
+  padding: 25px;
 }
 
 .breweryList {
