@@ -35,4 +35,5 @@ function getApi() {
 
 searchBtnEl.addEventListener("click", function() {
   getApi()
+  breweryListEl.classList.remove("hide")
 });
