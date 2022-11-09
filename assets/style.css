@@ -11,6 +11,11 @@ img {
   width: 100%;
   box-shadow: 8px 8px 5px rgb(196, 188, 133);
 }
+
+body {
+  background-color: rgb(228, 223, 204);
+}
+
 #yesBtn {
   background-image: linear-gradient(to top, #3d0606 0%, #702f2f 51%, #a05353 100%);
   background-color: rgb(126, 53, 67);
@@ -228,14 +233,18 @@ color: rgb(238, 238, 238);
   padding: 25px;
 }
 
-.breweryList div {
+.breweryList {
+  background-color: rgb(228, 223, 204);
+}
+
+.brewery {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 0.25rem;
+  border: 1px solid rgb(53, 23, 27);
+  border-radius: .25rem;
   width: 75%;
   margin: 15px auto;
   padding-right: 15px;
