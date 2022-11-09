@@ -41,9 +41,15 @@ header {
 }
 
 header h1 {
-  font-family: 'Oswald', sans-serif;
   
+  font-family: 'Mr Dafoe', cursive;
+  font-weight: 200;
+  font-size: 5rem;
+}
+header span{
+  font-family: 'Oswald', sans-serif;
   font-size: 4rem;
+  font-weight: 700;
 }
 header ul {
   list-style-type: none;
@@ -245,8 +251,26 @@ color: rgb(238, 238, 238);
   color: rgb(238, 238, 238);
   border: 1px solid rgb(53, 23, 27);
   border-radius: .25rem;
-  width: 75%;
+  width: 50%;
   margin: 15px auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-height: 250px;
+}
+
+.brewery h3 {
+  text-decoration: underline;
+}
+
+.brewery img {
+  display: flex;
+  position: absolute;
+  box-shadow: 0 0 0 0;
+  max-height: 200px;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 5%;
 }
