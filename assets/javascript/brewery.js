@@ -27,6 +27,7 @@ function searchCity(e) {
     })
     .then(function (data) {
       console.log(data);
+      
 
       var divList = [];
       //for loop to interate over the data and seperate the information to be displayed in cards

@@ -275,3 +275,22 @@ color: rgb(238, 238, 238);
   margin-bottom: auto;
   right: 5%;
 }
+
+.popOver{
+  position: fixed;
+  display: none;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: fit-content;
+  background: white;
+  padding: 5px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  margin: 6px auto;
+  cursor: pointer;
+}
+
