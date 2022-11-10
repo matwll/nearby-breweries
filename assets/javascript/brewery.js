@@ -41,21 +41,21 @@ function searchCity(e) {
         //create a card and append to dom
         var divEl = document.createElement("div");
         divEl.classList.add('search-div');
-        var typeEl = document.createElement("li");
-        typeEl.textContent = type;
-        var nameEl = document.createElement("li");
+        var typeEl = document.createElement("p");
+        typeEl.textContent = "Brewery type: " + type;
+        var nameEl = document.createElement("h3");
         nameEl.textContent = name;
-        var adressEl = document.createElement("li");
-        adressEl.textContent = adress;
-        var cityEl = document.createElement("li");
+        var adressEl = document.createElement("p");
+        adressEl.textContent = "🗺️ " + adress;
+        var cityEl = document.createElement("p");
         cityEl.textContent = (city + ', ' + state);
         var webAdressEl = document.createElement("a");
         webAdressEl.textContent = webAdress;
         webAdressEl.setAttribute('href', webAdress)
 
         //attach all of the li's to the div and push each of those div's into an array
-        divEl.appendChild(typeEl);
         divEl.appendChild(nameEl);
+        divEl.appendChild(typeEl);
         divEl.appendChild(adressEl);
         divEl.appendChild(cityEl);
         divEl.appendChild(webAdressEl);
