@@ -36,7 +36,7 @@
 <!-- ![webpage screenshot](./assets/images/webpage-screenshot.png) -->
 <img src="assets/images/webpage-screenshot.png" width="600" text-align="center">
 
-Our project was made to help users who are curious about trying something new, or who just want some help finding local brewery options near them. Our webpage was developed with ease of use in mind. The user can quickly navigate to our brewery search option from our landing page, or spend some time to read some fun brewery and beer facts in the fun facts section. After the user navigates to the search page they can type in their local city, or a city that they are visiting to find five random breweries within a fifty mile radius. In these results the user can find plenty of information about where they'd be visiting such as their business name, address, phone number (if applicable).
+Our project was made to help users who are curious about trying something new, or who just want some help finding local brewery options near them. Our webpage was developed with ease of use in mind. The user can quickly navigate to our brewery search option from our landing page, or spend some time to read some fun brewery and beer facts in the fun facts section. After the user navigates to the search page they can type in their local city, or a city that they are visiting to find five random breweries within a fifty mile radius. In these results the user can find plenty of information about where they'd be visiting such as their business name, address, website (if applicable).
 
 
 This project was built by a small team of aspiring developers. This allowed for us to practice utilizing front end and back end developing skills that we are still learning, and the opportunity to practice using GitHub in a team setting. 
@@ -98,7 +98,6 @@ See `LICENSE` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 * [Beer Fun Facts Source](https://facts.net/beer-facts/#:~:text=01Beer's%20core%20ingredients%20are,47%20million%20kiloliters%20per%20year)
 * [Cover Image for landing](https://timelinecovers.pro/covers/food-and-drinks/beer_facebook-cover-photo)
 * [API for Brewery list](https://www.openbrewerydb.org/documentation)
