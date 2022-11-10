@@ -10,7 +10,7 @@ function getApi() {
     console.log (inputFieldEl.value)
   };
   //adds users input to search parameters for API URL
-  var requestURL = 'https://api.giphy.com/v1/gifs/search?api_key=JPHvBSAvBJm1NQqutblYluzvAYw7dE6O&q=beer&limit=5&offset=0&rating=pg-13&lang=en';
+  var requestURL = 'https://api.giphy.com/v1/gifs/search?api_key=JPHvBSAvBJm1NQqutblYluzvAYw7dE6O&q=beer+' + inputFieldEl.value + '&limit=5&offset=0&rating=pg-13&lang=en';
   inputFieldEl.value = inputFieldEl.value.replace("+", " ")
   console.log(inputFieldEl.value);
   console.log(requestURL);
@@ -22,10 +22,16 @@ function getApi() {
       console.log(jsonArray);
       //creates image element and assigns the random Gif as the source
       var randGif1 = document.createElement("img");
+      randGif1.classList.add('gif');
       var randGif2 = document.createElement("img");
+      randGif2.classList.add('gif');
       var randGif3 = document.createElement("img");
+      randGif3.classList.add('gif');
       var randGif4 = document.createElement("img");
+      randGif4.classList.add('gif');
       var randGif5 = document.createElement("img");
+      randGif5.classList.add('gif');
+
       randGif1.src = jsonArray.data[0].images.fixed_height.url;
       randGif2.src = jsonArray.data[1].images.fixed_height.url;
       randGif3.src = jsonArray.data[2].images.fixed_height.url;
@@ -45,8 +51,18 @@ function getApi() {
 inputFieldEl.value = inputFieldEl.value.replace("+", " ")
 };
 
+function clearGifs() {
+  var findImages = document.querySelectorAll('.brewery');
+  for(search of findImages){
+    if(search.querySelector('.gif')){
+      search.querySelector('.gif').remove();
+    }
+  }
+}
+
 
 searchBtnEl.addEventListener("click", function() {
-getApi()
-breweryListEl.classList.remove("hide")
+  clearGifs()
+  getApi()
+  breweryListEl.classList.remove("hide")
 });
