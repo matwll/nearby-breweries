@@ -108,10 +108,6 @@ header a:hover {
 }
 
 .landingPage {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; */
   background-color: rgb(228, 223, 204);
 }
 
@@ -120,11 +116,9 @@ header a:hover {
 }
 
 .landingIntro h3 {
-  padding: 25px;
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
   border-radius: 8px;
-  /* margin-bottom: 10px; */
   font-family: 'Oswald', sans-serif;
   font-weight: 50;
   box-shadow: 2.5px 2.5px 5px rgb(125, 114, 114);
@@ -147,10 +141,6 @@ header a:hover {
   margin-bottom: 25px;
 }
 
-.factIntro {
-  /* margin-bottom: 25px; */
-}
-
 .funFacts h5 {
 width: fit-content;
 margin: 0;
@@ -164,6 +154,7 @@ border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
 }
+
 .funFacts h6 {
 width: fit-content;
 margin: 0;
@@ -196,6 +187,7 @@ color: rgb(238, 238, 238);
   color: antiquewhite;
   font-family: 'Oswald', sans-serif;
 }
+
 #factA p {
   background-color: antiquewhite;
   margin: 0;
@@ -212,7 +204,6 @@ color: rgb(238, 238, 238);
   border: 10px solid;
   border-color: #702f2f;
   box-shadow: 5px 5px 5px rgb(131, 83, 91);
-  
 }
 
 #factB h2 {
@@ -220,6 +211,7 @@ color: rgb(238, 238, 238);
   padding: 10px;
   font-family: 'Oswald', sans-serif;
 }
+
 #factB p {
   background-color: antiquewhite;
   margin: 0;
@@ -260,4 +252,68 @@ color: rgb(238, 238, 238);
   margin-top: auto;
   margin-bottom: auto;
   right: 5%;
+}
+
+@media screen and (max-width: 992px) {
+  .factContainer {
+    width: 100%;
+  }
+    #factA {
+  width: 100%;
+  margin: 0;
+  } 
+  #factB {
+    width: 100%;
+    margin: 0;
+  }
+  .brewery {
+    position: static;
+   
+  }
+  .brewery img {
+  position: static;
+  max-width: 200px;
+  height: auto;
+  padding-bottom: 10px;
+  }
+  .brewery a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ellipses {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 768px) {
+ .factContainer {
+  width: 100%;
+}
+  #factA {
+width: 100%;
+} 
+#factB {
+  width: 100%;
+  margin: 0;
+}
+.brewery {
+ position: static;
+}
+.brewery img {
+ position: static;
+ max-width: 200px;
+  height: auto;
+  padding-bottom: 10px;
+}
+.brewery a {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ellipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 }
