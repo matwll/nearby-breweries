@@ -1,4 +1,3 @@
-//this is assuming .breweryList is 
 var breweryListEl = document.querySelector(".breweryList");
 var searchBtnEl = document.querySelector("#searchBtn");
 var inputFieldEl = document.querySelector(".input-field")
@@ -14,7 +13,7 @@ function getApi() {
     console.log (inputFieldEl.value)
   };
   //adds users input to search parameters for API URL
-  var requestURL = 'https://api.giphy.com/v1/gifs/search?api_key=JPHvBSAvBJm1NQqutblYluzvAYw7dE6O&q=beer+' + inputFieldEl.value + '&limit=5&offset=0&rating=pg-13&lang=en';
+  var requestURL = 'https://api.giphy.com/v1/gifs/search?api_key=JPHvBSAvBJm1NQqutblYluzvAYw7dE6O&q=beer+' + inputFieldEl.value + '&limit=50&offset=0&rating=pg-13&lang=en';
   inputFieldEl.value = inputFieldEl.value.replace("+", " ")
   console.log(inputFieldEl.value);
   console.log(requestURL);
@@ -36,13 +35,16 @@ function getApi() {
       var randGif5 = document.createElement("img");
       randGif5.classList.add('gif');
 
-      randGif1.src = jsonArray.data[0].images.fixed_height.url;
-      randGif2.src = jsonArray.data[1].images.fixed_height.url;
-      randGif3.src = jsonArray.data[2].images.fixed_height.url;
-      randGif4.src = jsonArray.data[3].images.fixed_height.url;
-      randGif5.src = jsonArray.data[4].images.fixed_height.url;
+      let index = Math.floor(Math.random() * 46)
 
-      // randGif.classList.add("gif")
+
+
+      randGif1.src = jsonArray.data[index].images.fixed_height.url;
+      randGif2.src = jsonArray.data[index+1].images.fixed_height.url;
+      randGif3.src = jsonArray.data[index+2].images.fixed_height.url;
+      randGif4.src = jsonArray.data[index+3].images.fixed_height.url;
+      randGif5.src = jsonArray.data[index+4].images.fixed_height.url;
+
       
       breweryListEl.children[0].appendChild(randGif1);
       breweryListEl.children[1].appendChild(randGif2);
@@ -80,33 +82,30 @@ var learnBtnEl = document.querySelector("#learnBtn")
 
 homeBtnEl.addEventListener("click", function() {
   landingEl.classList.remove("hide");
-  landingEl.classList.add("show");
   landingEl.classList.add("landingPage");
+  landingEl.classList.add("grid-x");
+  landingEl.classList.add("grid-padding-x");
+  landingEl.classList.add("align-center-middle");
+  landingEl.classList.add("text-center");
   imageEl.classList.remove("hide");
-  imageEl.classList.add("show");
-  searchBoxEl.classList.remove("show");
   searchBoxEl.classList.add("hide");
-  breweryListEl.classList.remove("show");
   breweryListEl.classList.add("hide");
 })
 
 brewSearchBtnEl.addEventListener("click", function() {
-  landingEl.classList.remove("show");
   landingEl.classList.add("hide");
-  imageEl.classList.remove("show");
   imageEl.classList.add("hide");
   searchBoxEl.classList.remove("hide");
-  searchBoxEl.classList.add("show");
 })
 
 learnBtnEl.addEventListener("click", function() {
   landingEl.classList.remove("hide");
-  landingEl.classList.add("show");
   landingEl.classList.add("landingPage");
+  landingEl.classList.add("grid-x");
+  landingEl.classList.add("grid-padding-x");
+  landingEl.classList.add("align-center-middle");
+  landingEl.classList.add("text-center");
   imageEl.classList.remove("hide");
-  imageEl.classList.add("show");
-  searchBoxEl.classList.remove("show");
   searchBoxEl.classList.add("hide");
-  breweryListEl.classList.remove("show");
   breweryListEl.classList.add("hide");
 })
