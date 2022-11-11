@@ -263,27 +263,3 @@ color: rgb(238, 238, 238);
   margin-bottom: auto;
   right: 5%;
 }
-
-@media screen and (max-width: 986px) {
-  .brewery {
-    position: static;
-  }
-
-  .brewery img {
-    position: static;
-    max-width: 200px;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .brewery {
-    position: static;
-  }
-
-  .brewery img {
-    position: static;
-    max-width: 200px;
-    height: auto;
-  }
-}
