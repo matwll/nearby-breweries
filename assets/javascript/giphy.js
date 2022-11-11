@@ -2,6 +2,10 @@
 var breweryListEl = document.querySelector(".breweryList");
 var searchBtnEl = document.querySelector("#searchBtn");
 var inputFieldEl = document.querySelector(".input-field")
+var landingEl = document.querySelector("#landingPage");
+var imageEl = document.getElementById("coverImage");
+var searchBoxEl = document.getElementById("searchBox");
+
 
 function getApi() {
   //replaces spaces in user input with + to work with api url
@@ -66,3 +70,43 @@ searchBtnEl.addEventListener("click", function() {
   getApi()
   breweryListEl.classList.remove("hide")
 });
+
+
+//The following code is to make the nav bar responsive
+
+var homeBtnEl = document.querySelector("#homeBtn")
+var brewSearchBtnEl = document.querySelector("#brewSearchBtn")
+var learnBtnEl = document.querySelector("#learnBtn")
+
+homeBtnEl.addEventListener("click", function() {
+  landingEl.classList.remove("hide");
+  landingEl.classList.add("show");
+  landingEl.classList.add("landingPage");
+  imageEl.classList.remove("hide");
+  imageEl.classList.add("show");
+  searchBoxEl.classList.remove("show");
+  searchBoxEl.classList.add("hide");
+  breweryListEl.classList.remove("show");
+  breweryListEl.classList.add("hide");
+})
+
+brewSearchBtnEl.addEventListener("click", function() {
+  landingEl.classList.remove("show");
+  landingEl.classList.add("hide");
+  imageEl.classList.remove("show");
+  imageEl.classList.add("hide");
+  searchBoxEl.classList.remove("hide");
+  searchBoxEl.classList.add("show");
+})
+
+learnBtnEl.addEventListener("click", function() {
+  landingEl.classList.remove("hide");
+  landingEl.classList.add("show");
+  landingEl.classList.add("landingPage");
+  imageEl.classList.remove("hide");
+  imageEl.classList.add("show");
+  searchBoxEl.classList.remove("show");
+  searchBoxEl.classList.add("hide");
+  breweryListEl.classList.remove("show");
+  breweryListEl.classList.add("hide");
+})
