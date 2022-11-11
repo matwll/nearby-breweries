@@ -4,74 +4,6 @@
   
 }
 
-/* global padding and margins */
-.m0,.margin-0 { margin: 0px; }
-.m5,.margin-5 { margin: 5px; }
-.m10,.margin-10 { margin: 10px; }
-.m15,.margin-15 { margin: 15px; }
-.m20,.margin-20 { margin: 20px; }
-.m25,.margin-25 { margin: 25px; }
-.m30,.margin-30 { margin: 30px; }
-.m35,.margin-35 { margin: 35px; }
-.m40,.margin-40 { margin: 40px; }
-.m45,.margin-45 { margin: 45px; }
-
-.p0,.padding-0 { padding: 0px; }
-.p5,.padding-5 { padding: 5px; }
-.p10,.padding-10 { padding: 10px; }
-.p15,.padding-15 { padding: 15px; }
-.p20,.padding-20 { padding: 20px; }
-.p25,.padding-25 { padding: 25px; }
-.p30,.padding-30 { padding: 30px; }
-.p35,.padding-35 { padding: 35px; }
-.p40,.padding-40 { padding: 40px; }
-
-.mt0,.margin-top-0 { margin-top:0px; }
-.mt5,.margin-top-5 { margin-top:5px; }
-.mt10,.margin-top-10 { margin-top:10px; }
-.mt20,.margin-top-20 { margin-top:20px; }
-.mt30,.margin-top-30 { margin-top:30px; }
-.mt40,.margin-top-40 { margin-top:40px; }
-
-.ml0,.margin-left-0 { margin-left:0px; }
-.ml5,.margin-left-5 { margin-left:5px; }
-.ml10,.margin-left-10 { margin-left:10px; }
-.ml20,.margin-left-20 { margin-left:20px; }
-.ml30,.margin-left-30 { margin-left:30px; }
-.ml40,.margin-left-40 { margin-left:40px; }
-
-.pt0,.padding-top-0 { padding-top:0px; }
-.pt5,.padding-top-5 { padding-top:5px; }
-.pt10,.padding-top-10 { padding-top:10px; }
-.pt20,.padding-top-20 { padding-top:20px; }
-.pt30,.padding-top-30 { padding-top:30px; }
-.pt40,.padding-top-40 { padding-top:40px; }
-.pt50,.padding-top-50 { padding-top:50px; }
-
-.pb0,.padding-bottom-0 { padding-bottom:0px; }
-.pb5,.padding-bottom-5 { padding-bottom:5px; }
-.pb10,.padding-bottom-10 { padding-bottom:10px; }
-.pb20,.padding-bottom-20 { padding-bottom:20px; }
-.pb30,.padding-bottom-30 { padding-bottom:30px; }
-.pb40,.padding-bottom-40 { padding-bottom:40px; }
-.pb50,.padding-bottom-50 { padding-bottom:50px; }
-
-.pr0,.padding-right-0 { padding-right:0px; }
-.pr5,.padding-right-5 { padding-right:5px; }
-.pr10,.padding-right-10 { padding-right:10px; }
-.pr20,.padding-right-20 { padding-right:20px; }
-.pr30,.padding-right-30 { padding-right:30px; }
-.pr40,.padding-right-40 { padding-right:40px; }
-.pr50,.padding-right-50 { padding-right:50px; }
-
-.pl0,.padding-left-0 { padding-left:0px; }
-.pl5,.padding-left-5 { padding-left:5px; }
-.pl10,.padding-left-10 { padding-left:10px; }
-.pl20,.padding-left-20 { padding-left:20px; }
-.pl30,.padding-left-30 { padding-left:30px; }
-.pl40,.padding-left-40 { padding-left:40px; }
-.pl50,.padding-left-50 { padding-left:50px; }
-
 body {
   background-color: rgb(228, 223, 204);
 }
@@ -99,15 +31,16 @@ header {
   width: 100%;
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
-  /* padding: 10px;
-  padding-left: 30px;   */
+  padding: 10px;
+  padding-left: 20px;
 }
 
 header h1 {
-  
+  padding-left: 40px;
   font-family: 'Mr Dafoe', cursive;
   font-weight: 200;
   font-size: 5rem;
+  
 }
 header span{
   font-family: 'Oswald', sans-serif;
@@ -115,7 +48,6 @@ header span{
   font-weight: 700;
 }
 header ul {
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   margin-right: 45px;
@@ -176,10 +108,10 @@ header a:hover {
 }
 
 .landingPage {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   background-color: rgb(228, 223, 204);
 }
 
@@ -187,14 +119,15 @@ header a:hover {
   padding: 100px 0px 100px 0px;
 }
 
-.landingIntro h4 {
+.landingIntro h3 {
   padding: 25px;
   background-color: rgb(65, 28, 33);
   color: rgb(238, 238, 238);
   border-radius: 8px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-family: 'Oswald', sans-serif;
   font-weight: 50;
+  box-shadow: 2.5px 2.5px 5px rgb(125, 114, 114);
 }
 
 .landingIntro h5 {
@@ -252,9 +185,6 @@ color: rgb(238, 238, 238);
   width: 50%;
   border-radius: 10px;
   margin-left: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   background-color: #702f2f;
   text-align: left;
   border: 10px solid;
@@ -264,13 +194,11 @@ color: rgb(238, 238, 238);
 
 #factA h2 {
   color: antiquewhite;
-  padding: 10px;
   font-family: 'Oswald', sans-serif;
 }
 #factA p {
   background-color: antiquewhite;
   margin: 0;
-  padding: 25px;
 }
 
 #factB {
@@ -279,10 +207,6 @@ color: rgb(238, 238, 238);
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 20%;
-  float: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   background-color: #702f2f;
   text-align: left;
   border: 10px solid;
