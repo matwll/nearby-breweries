@@ -20,7 +20,7 @@ function searchCity(e) {
   fetch(
     "https://api.openbrewerydb.org/breweries?by_city=" +
       searchInput +
-      "&per_page=30"
+      "&per_page=20"
   )
     .then(function (response) {
       return response.json();
@@ -66,15 +66,21 @@ function searchCity(e) {
 //then if its 5 or less results (our amount of displayed searches) will add all to the DOM
 //if its more than 5 it picks a random 5 and displays those
       if(divList.length > 5){
-        for (var i = 0; i < 5; i++){
+        var randomIndex = [];
+        for (var i = 0; i < 5; i++){ //1 
           let index = Math.floor(Math.random() * divList.length);
-          listChildren[i].appendChild(divList[index]);
+          if (!randomIndex.includes(index)){
+            randomIndex.push(index);
+            listChildren[i].appendChild(divList[index]);
+          }else{
+            i--;
+          }
         }
       }else{
       //iterate over the array of breweries and append 1 to each div in the brewery list element
-      for (var i = 0; i < divList.length; i++){
-        listChildren[i].appendChild(divList[i]);
-      }
+        for (var i = 0; i < divList.length; i++){
+          listChildren[i].appendChild(divList[i]);
+        }
       }
     });
 };
