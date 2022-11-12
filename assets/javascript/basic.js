@@ -7,6 +7,10 @@ function showSearchBox() {
 landingEl.setAttribute("class","hide");
 imageEl.setAttribute("class", "hide");
 searchBoxEl.setAttribute("class","show");
+
+var citySearch = document.querySelector('.input-field');
+var lastSearch = JSON.parse(JSON.stringify(localStorage.getItem('searchHistory')));
+citySearch.value = lastSearch;
 }
 
 
