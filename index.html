@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css"
         integrity="sha512-COhcCg6IPtpBb4rDu3fJb+MOVP8vjJmoASF9jl8KoPQwQTlh3pKBE7FHPBPLnd3jV/ZJ77g+8haAFlNwtkOi1Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet"
+    href=
+    "https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css"
+    crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
@@ -21,26 +26,27 @@
 
 <body>
     <!-- Header/Navbar(?) -->
-    <header class="grid-x grid-padding-x p10 pl30">
-        <h1 class="grid-x grid-padding-x
-        small-up-2 medium-up-4 large-up-6">Meet <span>Brewery</span></h1>
-        <nav><ul>
+    <header class="grid-x grid-padding-x">
+        <h1 class="column small-up-2 medium-up-4 large-up-6">Meet <span>Brewery</span></h1>
+
+        <nav><ul class="no-bullet">
         <li><a href="#coverImage" id="homeBtn">Home</a></li>
         <li><a href="#searchBox" id="brewSearchBtn">Brewery Search</a></li>
         <li><a href="#funFacts" id="learnBtn">Learn More</a></li>
+
         <!-- <li><a href="">About Us</a></li> -->
         </ul></nav>
     </header>
     
-    <div id="coverImage" class="">
+    <div id="coverImage">
         <img src="./assets/images/beer-cover2.png" />
     </div>
     <!-- Landing Page with initial confirm button and fun facts -->
-    <div id="landing" class="landingPage">
+    <div id="landing" class="landingPage grid-x grid-padding-x align-center-middle text-center">
         <div class="landingIntro">
-            <h4>
-                Do you like a cold glass of beer and are looking to try something new?
-            </h4>
+            <h3 class="row cell small-4 align-center .text-left padding-2">
+                Do you like a cold glass of beer and are looking for something new?
+            </h3>
             <h5>
                 Click the button below to see how to find a local brewery near you!
             </h5>
@@ -49,33 +55,31 @@
             </button>
         </div>
 
-        <div class="funFacts">
-           <div class="factIntro">
+        <div class="funFacts grid-x grid-padding-x align-center-middle text-center margin-left-3 margin-right-3">
+           <div id="factIntro"class="factIntro cell small 4 align-">
             <h5>
                 Want to learn more about where you're going and what you're drinking?
             </h5>
             <h6>Learn more about beer and breweries below!</h6>
         </div>
         <div class="spacer"></div>
-            <div id="funFacts" class="factContainer">
+            <div id="funFacts" class="factContainer column align-self-top">
 
                 
-                    <div id="factA" class="style-beer">
-                        <!-- stating facts about beer-->
-                        <h2>Styles of Beer 🍻</h2>
+                    <div id="factA" class="style-beer row margin-top-2">
+                        <h2 class="padding-1">Styles of Beer 🍻</h2>
 
-                        <p> There are hundreds of different styles of beers. Although there are two major categories
+                        <p class="padding-2"> There are hundreds of different styles of beers. Although there are two major categories
                             of
                             beer (ales and lagers), beer has hundreds of varieties.<br>Here are the top 5 most popular:<br>1.
                             American Lager <br>2. International Lager <br>3. American Pale Ale <br>4. India Pale Ale (IPA) <br>5. Stout
                         </p>
-
                     </div>
                 
 
-                <div id="factB" class="benefit-beer">
-                    <h2>Benefits of Beer</h2>
-                    <p>
+                <div id="factB" class="benefit-beer row margin-top-3">
+                    <h2 class="padding-1">Benefits of Beer</h2>
+                    <p class="padding-2">
                         It may lower your risk of diabetes.<br>
                         It may build stronger bones.<br>
                         It cleans your teeth.<br>
@@ -84,26 +88,26 @@
                     </p>
                 </div>
 
-                <div id="factA" class="beer-day">
-                    <h2>Beer day in America</h2>
-                    <p>
+                <div id="factA" class="beer-day row margin-top-2">
+                    <h2 class="padding-1">Beer day in America</h2>
+                    <p class="padding-2">
                         National Beer Day is celebrated yearly in the United States on the<strong> 7th of April.</strong>  The economy
                         benefits from beer sales.
                     </p>
                 </div>
 
-                <div id="factB" class="drink">
-                    <h2>Consumed drink</h2>
-                    <p>
+                <div id="factB" class="drink row margin-top-3">
+                    <h2 class="padding-1">Consumed drink</h2>
+                    <p class="padding-2">
                         - Beer is the third most-consumed drink in the world, after water and tea. <br>
                         - When it comes to total beer consumption, China ranks number one.
 
                     </p>
                 </div>
 
-                <div id="factA" class="brewing">
-                    <h2>What is brewing?</h2>
-                    <p>
+                <div id="factA" class="brewing row margin-top-2">
+                    <h2 class="padding-1">What is brewing?</h2>
+                    <p class="padding-2">
                         Brewing is the production of beer by steeping a starch source in water and fermenting the
                         resulting
                         sweet liquid with yeast. It may be done in a brewery by a commercial brewer, at home by a
@@ -111,9 +115,9 @@
                     </p>
                 </div>
 
-                <div id="factB" class="producing-beer">
-                    <h2>Beer Producing</h2>
-                    <p>
+                <div id="factB" class="producing-beer row margin-top-3" >
+                    <h2 class="padding-1">Beer Producing</h2>
+                    <p class="padding-2">
                         - China, the United States, Germany, Russia and Brazil are among the top five beer-producing
                         countries.<br>
                         - More than 7,000 breweries manufacture beers in the United States.<br>
@@ -134,12 +138,14 @@
       <div>
         <h4>Enter your city to see Breweries near you!</h4>
       </div>
-      <div>
+      <div class="inputDiv">
         <input
           class="input-field search-field"
           type="search"
           placeholder="Search for your city name..."
         />
+
+        <div class="popOver"></div>
       </div>
       <div>
         <button id="searchBtn" class="button">Search</button>
@@ -147,7 +153,7 @@
     </div>
 
     <!-- Results page with brewery info and giphy result -->
-    <div class="breweryList hide">
+    <div id="list" class="breweryList hide">
       <div class="brewery"></div>
       <div class="brewery"></div>
       <div class="brewery"></div>
@@ -157,6 +163,7 @@
     <script src="./assets/javascript/giphy.js"></script>
     <script src="./assets/javascript/brewery.js"></script>
     <script src="./assets/javascript/basic.js"></script>
+    <script src="./assets/javascript/pop.js"></script>
 </body>
 
 </html>
