@@ -24,7 +24,6 @@ function searchCity(e) {
 
   var searchInput = citySearch.value;
 
-console.log(searchHistory);
   fetch(
     "https://api.openbrewerydb.org/breweries?by_city=" +
       searchInput +
