@@ -53,6 +53,7 @@ function searchCity(e) {
         var webAdressEl = document.createElement("a");
         webAdressEl.textContent = webAdress;
         webAdressEl.setAttribute('href', webAdress)
+        webAdressEl.classList.add("ellipses")
 
         //attach all of the li's to the div and push each of those div's into an array
         divEl.appendChild(nameEl);
