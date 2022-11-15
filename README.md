@@ -33,8 +33,9 @@
 <!-- ABOUT OUR PROJECT -->
 ## About Our Project
 
-<!-- ![webpage screenshot](./assets/images/webpage-screenshot.png) -->
-<img src="assets/images/webpage-screenshot.png" width="600" text-align="center">
+<img src="assets/images/updated-ss.png" width="600" text-align="center">
+
+### Visit our Deployed Application : [click me!](https://matwll.github.io/nearby-breweries/)
 
 Our project was made to help users who are curious about trying something new, or who just want some help finding local brewery options near them. Our webpage was developed with ease of use in mind. The user can quickly navigate to our brewery search option from our landing page, or spend some time to read some fun brewery and beer facts in the fun facts section. After the user navigates to the search page they can type in their local city, or a city that they are visiting to find five random breweries within a fifty mile radius. In these results the user can find plenty of information about where they'd be visiting such as their business name, address, website (if applicable), and the type of brewery it is(such as Micro, Brewpub, etc.).
 

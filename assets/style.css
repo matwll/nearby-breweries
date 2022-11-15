@@ -168,10 +168,6 @@ color: rgb(238, 238, 238);
   background-color: rgb(228, 223, 204);
 }
 
-.factContainer {
-  background-color: rgb(228, 223, 204);
-}
-
 #factA {
   width: 50%;
   border-radius: 10px;
@@ -254,4 +250,67 @@ color: rgb(238, 238, 238);
   margin-top: auto;
   margin-bottom: auto;
   right: 5%;
+
+}
+@media screen and (max-width: 992px) {
+  .factContainer {
+    width: 100%;
+  }
+    #factA {
+  width: 100%;
+  margin: 0;
+  } 
+  #factB {
+    width: 100%;
+    margin: 0;
+  }
+  .brewery {
+    position: static;
+   
+  }
+  .brewery img {
+  position: static;
+  max-width: 200px;
+  height: auto;
+  padding-bottom: 10px;
+  }
+  .brewery a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ellipses {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .factContainer {
+  width: 100%;
+}
+  #factA {
+width: 100%;
+} 
+#factB {
+  width: 100%;
+  margin: 0;
+}
+.brewery {
+ position: static;
+}
+.brewery img {
+ position: static;
+ max-width: 200px;
+  height: auto;
+  padding-bottom: 10px;
+}
+.brewery a {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ellipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
