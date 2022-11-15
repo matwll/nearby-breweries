@@ -1,6 +1,9 @@
 var searchBtn = document.querySelector("#searchBtn");
 var citySearch = document.querySelector(".input-field");
-var listChildren = document.querySelectorAll(".brewery");
+
+var listChildren = document.querySelectorAll('.brewery');
+
+
 
 searchBtn.addEventListener("click", searchCity);
 
@@ -20,6 +23,7 @@ function searchCity(e) {
   localStorage.setItem("searchHistory", citySearch.value);
 
   var searchInput = citySearch.value;
+
   fetch(
     "https://api.openbrewerydb.org/breweries?by_city=" +
       searchInput +
@@ -30,6 +34,7 @@ function searchCity(e) {
     })
     .then(function (data) {
       console.log(data);
+      
 
       var divList = [];
       //for loop to interate over the data and seperate the information to be displayed in cards
